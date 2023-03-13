@@ -1,0 +1,160 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+section {
+  /* height: 500px; */
+  background-color: white;
+  border: solid black 1px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+}
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.hero {
+  background-color: #1c1d25;
+
+  height: 100vh;
+  color: white;
+  font-size: 40px;
+}
+
+footer {
+  height: 500px;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 24px;
+  width: 500px;
+  justify-content: space-around;
+}
+
+li {
+  /* padding: 20px; */
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 96px;
+  margin: 0;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 48px;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 800;
+}
+
+p {
+  font-size: 32px;
+  margin: 0;
+  width: 600px;
+  font-weight: 400px;
+}
+
+.hero-area {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* padding-top: 80px; */
+}
+
+.hero-text {
+  margin-left: 40px;
+}
+
+.button {
+  width: 48px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: aliceblue;
+  text-align: center;
+  color: #1c1d25;
+}
+
+.button:hover {
+  background-color: bisque;
+}
+
+.button:active {
+  background-color: darkgray;
+  color: aqua;
+}
+
+.social {
+  margin: 16px;
+}
+
+/* About Me */
+.about-me {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+}
+
+.information {
+}
+
+.headshot-container {
+  display: flex;
+  align-items: center;
+}
+
+.headshot {
+  width: 200px;
+  border-radius: 40px;
+}
+
+/* Projects */
+
+.projects {
+  border: 1px solid black;
+  width: 100%;
+  height: 80vh;
+}
+
+.project-container {
+  width: 100%;
+  display: grid;
+  /* grid-template-columns: 40px repeat(12, 1fr) 40px;
+  grid-template-rows: 40px 1fr 1fr 1fr 40px; */
+  grid-template-columns: repeat(12, 100px);
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+}
+
+.image-container {
+  display: flex;
+  align-content: flex-start;
+  border: 1px solid black;
+  grid-area: 1 / 1/ 8 / 8;
+}
+
+.info {
+  grid-column: 9 span 3;
+  grid-row: 4 span 4;
+  /* grid-area: 8 / 9 / 8 / 12; */
+  /* Not working :( I have it set to 12 100px columns and as many rows, but it's putting this entire container under the fucking footer for some reason */
+}
