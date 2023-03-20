@@ -88,6 +88,10 @@ h5 {
   font-size: 20px;
   font-weight: 600;
   color: #2C2C2C;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  cursor: pointer;
 }
 
 p {
@@ -192,7 +196,7 @@ font-weight: 400;
 
 }
 
-/* Media Queris */
+/* Media Queries */
 
 @media only screen and (max-width:600) {
   .projects {
@@ -210,3 +214,4 @@ font-weight: 400;
     grid-area: info;
   }
 }
+
